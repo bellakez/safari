@@ -1,7 +1,7 @@
 //nøgle
 const url = "https://safari-0f78.restdb.io/rest/safari";
 const key = "620e46b034fd621565858728";
-let menu;
+let safari;
 let filter = "alle";
 const filtrerKnap = document.querySelectorAll("button");
 //const modal = document.querySelector("#modal");
@@ -24,7 +24,7 @@ function start() {
 
 //definere funktionen filtrerkategori, som betyder at for hver knap tildeles h1 en kategori
 function filtrerKategori() {
-  filter = this.dataset.menu;
+  filter = this.dataset.safari;
   console.log("filter", filter);
   document.querySelector("h1").textContent = this.textContent;
 
@@ -34,7 +34,7 @@ function filtrerKategori() {
 async function hentdata() {
   console.log("her er json");
   const respons = await fetch(url, options);
-  menu = await respons.json();
+  safari = await respons.json();
   vis();
 }
 
@@ -43,19 +43,20 @@ const container = document.querySelector("section");
 const temp = document.querySelector("template");
 
 function vis() {
-  console.log(menu);
+  console.log(safari);
   container.innerHTML = "";
-  menu.forEach((ret) => {
-    if (filter == ret.kategori || filter == "alle") {
+  safari.forEach((tur) => {
+    if (filter == tur.kategori || filter == "alle") {
       /*____klon er altså alt inde i template 'temp'_____*/
       const klon = temp.cloneNode(true).content;
-      klon.querySelector("h2").textContent = ret.navn;
-      klon.querySelector("h3").textContent = ret.pris + " kr.";
-      klon.querySelector("p").textContent = ret.kortbeskrivelse;
-      klon.querySelector("img").src = `medium/${ret.billednavn}-md.jpg`;
+      klon.querySelector("h2").textContent = tur.varighed;
+      klon.querySelector("h3").textContent = tur.pris + " kr.";
+      klon.querySelector(".area").textContent = tur.område;
+      klon.querySelector("p").textContent = tur.kort;
+      klon.querySelector("img").src = `medium/${tur.billednavn}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
       klon.querySelector("article").addEventListener("click", () => {
-        location.href = `babushka-singleview.html?id=${ret._id}`;
+        location.href = `babushka-singleview.html?id=${tur._id}`;
       });
 
       /*klon.querySelector("img").src = "medium/" + kategori.md;*/
