@@ -14,8 +14,15 @@ article {
   border-color: rgb(200, 188, 182);
   display: inline-block;
   cursor: pointer;
+  overflow: visible;
+}
+
+.box img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 img {
-  max-width: 100%;
+  object-fit: cover;
 }
