@@ -53,7 +53,7 @@ function vis() {
       klon.querySelector("h3").textContent = tur.pris + " kr.";
       klon.querySelector(".area").textContent = tur.område;
       klon.querySelector("p").textContent = tur.kort;
-      klon.querySelector("img").src = `billeder/${tur.billednavn}-md.jpg`;
+      klon.querySelector("img").src = `billeder/${tur.billede}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
       klon.querySelector("article").addEventListener("click", () => {
         location.href = `babushka-singleview.html?id=${tur._id}`;
