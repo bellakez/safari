@@ -1,4 +1,3 @@
-
 * {
   margin: 0px;
 }
@@ -19,7 +18,6 @@ article {
   border-color: rgb(200, 188, 182);
   display: inline-block;
   cursor: pointer;
-
 }
 
 #splash {
@@ -173,3 +171,13 @@ button {
   overflow: visible;
 }
 
+/*Billede størrelse*/
+.box img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+}
