@@ -56,7 +56,7 @@ function vis() {
       klon.querySelector("img").src = `billeder/${tur.billede}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
       klon.querySelector("article").addEventListener("click", () => {
-        location.href = `babushka-singleview.html?id=${tur._id}`;
+        location.href = `safari-singleview.html?id=${tur._id}`;
       });
 
       /*klon.querySelector("img").src = "medium/" + kategori.md;*/

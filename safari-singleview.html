@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleview</title>
+    <link rel="stylesheet" href="safari.css">
+</head>
+<body>
+     </head>
+  <body>
+    <main>
+      <button>Back</button>
+      <section>
+        <article>
+            <div class="box">
+            <img src="" alt="" />
+          </div>
+        <div class="billederamme"> 
+          <h2></h2>
+          <h3></h3>
+          <h3 class="area"></h3>
+          <p></p>
+        </div>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      /*____url søgeparameter____*/
+      const urlParams = new URLSearchParams(window.location.search);
+      /*___går op i søger efter id__*/
+      const id = urlParams.get("id");
+      console.log({ id });
+      let safari;
+        
+    //henter dataen fra nøgle men for enkelt object (fields) med unikke id
+    //nøgle
+    const url = `https://safari-0f78.restdb.io/rest/safari/${id}`;
+    const key = "620e46b034fd621565858728";
+
+      const options = {
+        headers: {
+          "x-apikey": key,
+        },
+      };
+
+      //henter json data fra io
+      async function hentdata() {
+        const respons = await fetch(url, options);
+        safari = await respons.json();
+        console.log("safari", safari);
+        vis();
+      }
+
+      function vis() {
+        document.querySelector("h2").textContent = safari.varighed;
+        document.querySelector("h3").textContent = safari.pris + " kr.";
+        document.querySelector(".area").textContent = safari.område;
+        document.querySelector("p").textContent = safari.lang;
+        document.querySelector("img").src = `billeder/${safari.billede}-md.jpg`;
+        
+      }
+
+      hentdata();
+
+      document.querySelector("button").addEventListener("click", () => {
+        history.back();
+      });
+    </script>
+  </body>
+</html>
+
+    
