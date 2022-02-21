@@ -35,10 +35,10 @@ article {
 }
 
 h1 {
-  padding: 60px;
+  padding: 20px;
   text-align: center;
-  background: #cecece;
-  color: white;
+  background: rgb(218, 211, 202);
+  color: rgb(0, 0, 0);
   font-size: 30px;
 }
 
@@ -50,6 +50,7 @@ button {
   border-radius: 12px;
   width: 190px;
   height: 40px;
+  text-align: center;
 }
 
 .menu_knap {
@@ -59,8 +60,7 @@ button {
   top: 0;
   left: 0;
   justify-content: space-between;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+  color: rgb(204, 161, 111);
   margin: 0;
   padding: 0;
   width: 90px;
@@ -176,6 +176,22 @@ button {
   width: 100%;
 }
 
+
 img {
   object-fit: cover;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(218, 211, 202);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 23px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
