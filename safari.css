@@ -21,20 +21,40 @@ article {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.box {
+
+.box img {
+  overflow: hidden;
+  /*Billede størrelse*/
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
   border-radius: 25px;
+  height: 250px;
+  border: 2px solid #082525;
+}
+.box {
+  position: relative;
+  height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 200px;
-  border: 2px solid #082525;
+}
+
+img {
+  object-fit: cover;
+}
+.button-box {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
 }
 
 .box button {
-  display: grid;
-  grid-row: 1;
-  grid-column: 1;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #93552a;
+  cursor: pointer;
 }
 
 .billederamme {
@@ -96,6 +116,7 @@ button {
   height: 40px;
   text-align: center;
   font-family: "Source Serif Pro";
+  cursor: pointer;
 }
 
 .menu_knap {
@@ -213,16 +234,6 @@ button {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-
-/*Billede størrelse*/
-.box img {
-  aspect-ratio: 1;
-  object-fit: cover;
-  width: 100%;
-}
-
-img {
-  object-fit: cover;
 
 .topnav {
   background-color: rgb(218, 211, 202);
