@@ -55,7 +55,7 @@ function vis() {
       klon.querySelector("p").textContent = tur.kort;
       klon.querySelector("img").src = `billeder/${tur.billede}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
-      klon.querySelector("article").addEventListener("click", () => {
+      klon.querySelector(".box button").addEventListener("click", () => {
         location.href = `safari-singleview.html?id=${tur._id}`;
       });
 
