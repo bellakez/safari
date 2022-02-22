@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
     <title>Singleview</title>
     <link rel="stylesheet" href="safari.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+    <style>
+      /*____giver section en flex så vi kan ligge boxen i midten*/
+       #single {
+          display: flex;
+          justify-content: space-around;
+          padding: 5px;
+          margin: 5px;
+      }
+      /*___for skærm-størrelse*/
+      @media only screen and (min-width: 700px) {
+      #single {
+          display: flex;
+          justify-content: space-around;
+          padding: 40px;
+          margin: 40px;
+      }
+
+      .box img {
+      /*Billede størrelse*/
+      aspect-ratio: 1;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 25px;
+      height: 450px;
+      border: 2px solid #082525;
+      grid-area: 1/1;
+      }
+    }
+    </style>
+
 </head>
 <body>
      </head>
   <body>
     <main>
       <button class="singlebutton">Back</button>
-      <section>
+      <section id="single">
         <article>
             <div class="box">
             <img src="" alt="" />
