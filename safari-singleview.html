@@ -10,33 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 
     <style>
-      /*____giver section en flex så vi kan ligge boxen i midten*/
-       #single {
-          display: flex;
-          justify-content: space-around;
-          padding: 5px;
-          margin: 5px;
+      /*___giver body en farve___*/
+      body {
+        background-color: #dfc9b9;
       }
-      /*___for skærm-størrelse*/
-      @media only screen and (min-width: 700px) {
-      #single {
-          display: flex;
-          justify-content: space-around;
-          padding: 40px;
-          margin: 40px;
+      /*___giver section flex så den ligger sig i midten med margin og padding*/
+        #single {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
       }
 
-      .box img {
-      /*Billede størrelse*/
-      aspect-ratio: 1;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 25px;
-      height: 500px;
-      border: 2px solid #082525;
-      grid-area: 1/1;
+      /*____giver article en grid så vi kan ligge box og billede ved siden af hinanden*/
+       #single_article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        padding: 5px;
+        margin: 5px;
       }
+
+      /*___giver billede border og størrelse___*/
+      img {
+        max-width: 100%;
+        border-radius: 25px;
+        border: 0.2px solid rgb(0, 0, 0);
+      }
+
+
+      /*___for skærm-størrelse*/
+      @media only screen and (min-width: 700px) {
+      /*___giver section flex så den ligger sig i midten med margin og padding*/
+      #single {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        padding: 30px;
+      }
+
+      /*____giver article en grid så vi kan ligge box og billede ved siden af hinanden*/
+      #single_article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        padding: 20px;
+        margin: 20px;
+        gap: 10px;
+      } 
+
+
+      /*___giver billede border og størrelse___*/
+      img {
+        max-width: 100%;
+        border-radius: 25px;
+        border: 0.2px solid rgb(0, 0, 0);
+      }   
     }
+ 
     </style>
 
 </head>
@@ -46,11 +75,11 @@
     <main>
       <button class="singlebutton">Back</button>
       <section id="single">
-        <article>
-            <div class="box">
+        <article id="single_article">
+            <div class="single_box">
             <img src="" alt="" />
           </div>
-        <div class="billederamme"> 
+        <div class="tekstramme"> 
           <h2></h2>
           <h3></h3>
           <h3 class="area"></h3>
