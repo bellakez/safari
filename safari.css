@@ -157,8 +157,7 @@ p {
 }
 
 #banner {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 #banner button {
