@@ -140,8 +140,20 @@ p {
   display: grid;
 }
 
+/*Styling af skrift på splash*/
+.mufasasafari {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: "Cinzel Decorative";
+  color: white;
+}
+
 #splash img {
   width: 100%;
+  height: 70vh;
   object-fit: cover;
   grid-row: 1;
   grid-column: 1;
