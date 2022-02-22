@@ -19,8 +19,8 @@ article {
   border: 0.6px solid #092626;
   border-radius: 25px;
   display: inline-block;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1rem;
 }
 
 /*Styling af fonte*/
@@ -93,6 +93,16 @@ p {
   }
 }
 
+.billederamme {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
+  height: 250px;
+  border: 0.6px solid #092626;
+  grid-area: 1/1;
+  padding: 1rem;
+}
+
 /*Styling af knapper på billeder OG billeder*/
 .box {
   display: grid;
@@ -100,7 +110,6 @@ p {
 }
 .box button {
   place-self: center center;
-  text-align: center;
   background-color: #93552a;
   cursor: pointer;
   border: none;
@@ -123,6 +132,7 @@ p {
   height: 250px;
   border: 0.6px solid #092626;
   grid-area: 1/1;
+  margin-bottom: 1rem;
 }
 
 /*Styling af splash*/
