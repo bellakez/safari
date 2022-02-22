@@ -55,32 +55,8 @@ article {
   grid-area: 1/1;
 }
 
-<<<<<<< HEAD
 /*Styling af splash*/
-=======
-.box {
-  border-radius: 25px;
-  border-color: #082525;
-}
-
-.box button {
-  display: grid;
-  grid-row: 1;
-  grid-column: 1;
-  background-color: #93552a;
-}
-
-.billederamme {
-  border-radius: 25px;
-  border-color: #082525;
-}
-
-article img {
-  border-radius: 25px;
-  border-color: #082525(200, 188, 182);
-}
-
->>>>>>>f2a7373027956bb3bc064a58308fdb43ca156714 #splash {
+#splash {
   display: grid;
 }
 
@@ -270,33 +246,7 @@ h3 {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/*hover effekt og aktiv side*/
-#banner button:hover {
-  background-color: #dfc9b9;
-}
-
-#banner hover:active {
-  background-color: #dfc9b9;
-}
-
-#banner button {
-  border: none;
-}
-
-/*Billede størrelse*/
-.box img {
-  aspect-ratio: 1;
-  object-fit: cover;
-  width: 100%;
-}
-
-img {
-  object-fit: cover;
-}
-
-/* .topnav {
->>>>>>> amanda
->>>>>>> f2a7373027956bb3bc064a58308fdb43ca156714
+.topnav {
   background-color: rgb(218, 211, 202);
   overflow: hidden;
 }
@@ -308,31 +258,4 @@ img {
   padding: 23px 16px;
   text-decoration: none;
   font-size: 17px;
-} */
-
-/* .topnav {
-  background-color: #333;
-  overflow: hidden;
-} */
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
 }
