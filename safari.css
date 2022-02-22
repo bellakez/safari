@@ -22,6 +22,7 @@ article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*Styling af billeder til artikel*/
 .box img {
   overflow: hidden;
   /*Billede størrelse*/
@@ -34,18 +35,14 @@ article {
 }
 .box {
   position: relative;
-  height: 300px;
+
   display: flex;
   justify-content: center;
 }
-
-img {
-  object-fit: cover;
-}
+/*Styling af knapper på billeder*/
 .button-box {
   position: absolute;
   top: 50%;
-  z-index: 1;
 }
 
 .box button {
@@ -55,16 +52,7 @@ img {
   align-items: center;
   background-color: #93552a;
   cursor: pointer;
-}
-
-.billederamme {
-  border-radius: 25px;
-  border-color: #082525;
-}
-
-article img {
-  border-radius: 25px;
-  border-color: #082525(200, 188, 182);
+  border: none;
 }
 
 #splash {
@@ -119,6 +107,7 @@ button {
   cursor: pointer;
 }
 
+/*Styling af burgermenu*/
 .menu_knap {
   font-family: "Major Mono Display", monospace;
   font-size: 3rem;
@@ -215,6 +204,7 @@ button {
   }
 }
 
+/*Styling af tilbage til toppen knap*/
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -233,6 +223,19 @@ button {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*hover effekt og aktiv side*/
+#banner button:hover {
+  background-color: #dfc9b9;
+}
+
+#banner hover:active {
+  background-color: #dfc9b9;
+}
+
+#banner button {
+  border: none;
 }
 
 .topnav {
