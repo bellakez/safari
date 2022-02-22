@@ -204,7 +204,7 @@ p {
 }
 
 .menu_knap {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Source Serif Pro";
   font-size: 3rem;
   position: fixed;
   top: 0;
@@ -246,7 +246,7 @@ p {
 }
 
 .menu {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Source Serif Pro";
   font-weight: lighter;
   height: 100%;
   width: 100%;
