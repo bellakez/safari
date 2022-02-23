@@ -36,6 +36,9 @@
         border-radius: 25px;
         border: 0.2px solid rgb(0, 0, 0);
       }
+      .ikon {
+        border: none;
+      }
 
 
       /*___for skærm-størrelse*/
@@ -63,7 +66,10 @@
         max-width: 100%;
         border-radius: 25px;
         border: 0.2px solid rgb(0, 0, 0);
-      }   
+      } 
+       .ikon {
+        border: none;
+      }  
     }
  
     </style>
@@ -84,6 +90,11 @@
           <h3></h3>
           <h3 class="area"></h3>
           <p></p>
+        </div>
+        <div class="single_ikon">
+          <h3>Disse dyr kan ses</h3>
+          <img class="ikon" src="" alt="">
+          <p>OBS krybdyr og fuglearter kan ses, men er ikke inkluderet i ikon-galleri, da det ikke kan garanteres hvilke der ses på safarien</p>
         </div>
         </article>
       </section>
@@ -122,7 +133,7 @@
         document.querySelector(".area").textContent = safari.område;
         document.querySelector("p").textContent = safari.lang;
         document.querySelector("img").src = `billeder/${safari.billede}-md.jpg`;
-        
+        document.querySelector(".ikon").src = `ikoner/${safari.ikoner}-md.png`;
       }
 
       hentdata();
