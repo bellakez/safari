@@ -105,3 +105,12 @@ function skift() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(skift, 4000); //Tid på billederne//
 }
+
+//Pop up/Modal//
+const modal = document.querySelector("#modal");
+document.querySelector(".logo2").addEventListener("click", visDetaljer);
+
+function visDetaljer() {
+  modal.style.display = "flex";
+}
+modal.addEventListener("click", () => (modal.style.display = "none"));
