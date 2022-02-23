@@ -105,3 +105,21 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//Slideshow//
+var slideIndex = 0;
+skift();
+
+function skift() {
+  var i;
+  var x = document.getElementsByClassName("animalSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  setTimeout(skift, 4000); //Tid på billederne//
+}
