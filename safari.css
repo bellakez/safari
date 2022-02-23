@@ -53,6 +53,7 @@ p {
   font-size: 0.8rem;
   padding: 0.2rem;
   color: #092626;
+  line-height: 1.6;
 }
 /*Tablet version*/
 /*======Media tablet version======*/
@@ -72,10 +73,13 @@ p {
   p {
     font-size: 0.9rem;
   }
+  .tekstramme {
+    height: 250px;
+  }
 }
 
 /*======Media Web version======*/
-@media (min-width: 992px) {
+@media (min-width: 700px) {
   h1 {
     font-size: 3rem;
   }
@@ -90,6 +94,9 @@ p {
 
   p {
     font-size: 1rem;
+  }
+  .tekstramme {
+    height: 300px;
   }
 }
 
@@ -126,14 +133,16 @@ p {
 }
 
 /*Styling af ramme om teksten*/
-.tekstramme {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 25px;
-  height: 250px;
-  border: 0.6px solid #092626;
-  grid-area: 1/1;
-  padding: 1rem;
+@media (max-width: 250px) {
+  .tekstramme {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+    height: fit-content;
+    border: 0.6px solid #092626;
+    grid-area: 1/1;
+    padding: 20px;
+  }
 }
 
 /*Styling af splash*/
