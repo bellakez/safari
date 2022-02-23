@@ -291,8 +291,7 @@ p {
   background-color: white;
 }
 
-.luk {
-  margin: 2em 0 0 1.2em;
+#modal h3 {
   text-transform: capitalize;
   color: white;
   background-color: #343f32;
@@ -304,6 +303,6 @@ p {
   cursor: pointer;
   border: none;
 }
-.luk:hover {
+#modal h3:hover {
   background-color: #dfc9b9;
 }
