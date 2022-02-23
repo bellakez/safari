@@ -28,6 +28,7 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         padding: 5px;
         margin: 5px;
+        gap: 10px;
       }
 
       /*___giver billede border og størrelse___*/
@@ -36,8 +37,13 @@
         border-radius: 25px;
         border: 0.2px solid rgb(0, 0, 0);
       }
+      /*___fjerner border fra ikoner */
       .ikon {
         border: none;
+      }
+
+      .single_p {
+        font-size: 0.7rem;
       }
 
 
@@ -57,7 +63,7 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         padding: 20px;
         margin: 20px;
-        gap: 10px;
+        gap: 15px;
       } 
 
 
@@ -70,6 +76,9 @@
        .ikon {
         border: none;
       }  
+      .single_p {
+        font-size: 0.7rem;
+      }
     }
  
     </style>
@@ -92,9 +101,9 @@
           <p></p>
         </div>
         <div class="single_ikon">
-          <h3>Disse dyr kan ses</h3>
+          <h3>Disse dyr kan bl.a. ses</h3>
           <img class="ikon" src="" alt="">
-          <p>OBS krybdyr og fuglearter kan ses, men er ikke inkluderet i ikon-galleri, da det ikke kan garanteres hvilke der ses på safarien</p>
+          <p class="single_p">OBS krybdyr og fuglearter kan ses, men er ikke inkluderet i ikon-galleri, da det ikke kan garanteres hvilke der ses på safarien</p>
         </div>
         </article>
       </section>
@@ -129,7 +138,7 @@
 
       function vis() {
         document.querySelector("h2").textContent = safari.varighed;
-        document.querySelector("h3").textContent = safari.pris + " kr.";
+        document.querySelector("h3").textContent = "Pris: " + safari.pris + " kr.";
         document.querySelector(".area").textContent = safari.område;
         document.querySelector("p").textContent = safari.lang;
         document.querySelector("img").src = `billeder/${safari.billede}-md.jpg`;

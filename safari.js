@@ -50,8 +50,7 @@ function vis() {
       /*____klon er altså alt inde i template 'temp'_____*/
       const klon = temp.cloneNode(true).content;
       klon.querySelector("h2").textContent = tur.varighed;
-      klon.querySelector("h3").textContent = tur.pris + " kr.";
-      klon.querySelector(".area").textContent = tur.område;
+      klon.querySelector(".area").textContent = "Tur til " + tur.område;
       klon.querySelector("p").textContent = tur.kort;
       klon.querySelector("img").src = `billeder/${tur.billede}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
