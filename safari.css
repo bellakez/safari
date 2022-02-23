@@ -291,7 +291,7 @@ p {
   background-color: white;
 }
 
-#modal h3 {
+#modal button {
   text-transform: capitalize;
   color: white;
   background-color: #343f32;
@@ -303,6 +303,6 @@ p {
   cursor: pointer;
   border: none;
 }
-#modal h3:hover {
+#modal button:hover {
   background-color: #dfc9b9;
 }

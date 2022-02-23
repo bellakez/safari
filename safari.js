@@ -3,7 +3,7 @@ const url = "https://safari-0f78.restdb.io/rest/safari";
 const key = "620e46b034fd621565858728";
 let safari;
 let filter = "alle";
-const filtrerKnap = document.querySelectorAll("button");
+const filtrerKnap = document.querySelectorAll("#banner button");
 //const modal = document.querySelector("#modal");
 
 const options = {
@@ -108,9 +108,12 @@ function skift() {
 
 //Pop up/Modal//
 const modal = document.querySelector("#modal");
+const btn = document.querySelector("#modal button");
 document.querySelector(".logo2").addEventListener("click", visDetaljer);
 
 function visDetaljer() {
   modal.style.display = "flex";
 }
-modal.addEventListener("click", () => (modal.style.display = "none"));
+document
+  .querySelector("#modal button")
+  .addEventListener("click", () => (modal.style.display = "none"));
