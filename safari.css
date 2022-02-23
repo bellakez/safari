@@ -156,10 +156,11 @@ p {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Cinzel Decorative";
   color: white;
 }
+/*___logo på splashbilledet___*/
 .logo2 {
   background-image: url(logo2.svg);
   aspect-ratio: 490/490;
