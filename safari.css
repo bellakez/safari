@@ -57,7 +57,7 @@ p {
 }
 /*Tablet version*/
 /*======Media tablet version======*/
-@media (min-width: 300px) {
+@media (min-width: 400px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -74,7 +74,7 @@ p {
     font-size: 0.9rem;
   }
   .tekstramme {
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     width: 100%;
     border-radius: 25px;
@@ -102,7 +102,7 @@ p {
     font-size: 1rem;
   }
   .tekstramme {
-    height: 320px;
+    height: 290px;
     object-fit: cover;
     width: 100%;
     border-radius: 25px;
@@ -145,7 +145,7 @@ p {
 }
 
 /*Styling af ramme om teksten*/
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .tekstramme {
     object-fit: cover;
     width: 100%;
@@ -231,79 +231,6 @@ p {
   border: none;
 }
 
-/*Styling af burgermenu*/
-
-.menu_knap,
-.menu {
-  z-index: 100;
-}
-
-.menu_knap {
-  font-family: "Source Serif Pro";
-  font-size: 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: space-between;
-  color: rgb(204, 161, 111);
-  margin: 0;
-  padding: 0;
-  width: 90px;
-  height: 90px;
-  background-color: #fff;
-  border-bottom-right-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  animation: not-checked-anim 0.2s both;
-  transition: 0.2s;
-}
-
-.hide {
-  display: none;
-}
-
-.boxed {
-  text-align: center;
-}
-
-.menu {
-  font-family: "Source Serif Pro";
-  font-weight: lighter;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  transform: translateY(-100%);
-  transition: transform 1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.boxed {
-  text-align: center;
-}
-
-@media (min-width: 600px) {
-  header nav ul {
-    display: flex;
-    flex-flow: wrap;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    overflow-x: auto;
-  }
-}
-
 /*Styling af tilbage til toppen knap*/
 #myBtn {
   display: none; /* Hidden by default */
@@ -324,20 +251,6 @@ p {
 
 #myBtn:hover {
   background-color: #dfc9b9; /* Add a dark-grey background on hover */
-}
-
-/*.topnav {
-  background-color: #dfc9b9;
-  overflow: hidden;
-}*/
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 23px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 /*Single view csss*/
