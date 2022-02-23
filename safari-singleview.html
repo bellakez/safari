@@ -28,6 +28,7 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         padding: 5px;
         margin: 5px;
+        gap: 10px;
       }
 
       /*___giver billede border og størrelse___*/
@@ -35,6 +36,14 @@
         max-width: 100%;
         border-radius: 25px;
         border: 0.2px solid rgb(0, 0, 0);
+      }
+      /*___fjerner border fra ikoner */
+      .ikon {
+        border: none;
+      }
+
+      .single_p {
+        font-size: 0.7rem;
       }
 
 
@@ -54,7 +63,7 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         padding: 20px;
         margin: 20px;
-        gap: 10px;
+        gap: 15px;
       } 
 
 
@@ -63,9 +72,31 @@
         max-width: 100%;
         border-radius: 25px;
         border: 0.2px solid rgb(0, 0, 0);
-      }   
+      } 
+       .ikon {
+        border: none;
+      }  
+      .single_p {
+        font-size: 0.7rem;
+      }
     }
- 
+ /*tilbageknap*/
+.singlebutton {
+  margin: 2em 0 0 1.2em;
+  text-transform: capitalize;
+  color: white;
+  background-color: #343f32;
+  border-radius: 12px;
+  width: 190px;
+  height: 40px;
+  text-align: center;
+  font-family: "Source Serif Pro";
+  cursor: pointer;
+  border: none;
+}
+.singlebutton:hover {
+  background-color: #dfc9b9;
+}
     </style>
 
 </head>
@@ -84,6 +115,11 @@
           <h3></h3>
           <h3 class="area"></h3>
           <p></p>
+        </div>
+        <div class="single_ikon">
+          <h3>Disse dyr kan bl.a. ses</h3>
+          <img class="ikon" src="" alt="">
+          <p class="single_p">OBS krybdyr og fuglearter kan ses, men er ikke inkluderet i ikon-galleri, da det ikke kan garanteres hvilke der ses på safarien</p>
         </div>
         </article>
       </section>
@@ -118,11 +154,11 @@
 
       function vis() {
         document.querySelector("h2").textContent = safari.varighed;
-        document.querySelector("h3").textContent = safari.pris + " kr.";
+        document.querySelector("h3").textContent = "Pris: " + safari.pris + " kr.";
         document.querySelector(".area").textContent = safari.område;
         document.querySelector("p").textContent = safari.lang;
         document.querySelector("img").src = `billeder/${safari.billede}-md.jpg`;
-        
+        document.querySelector(".ikon").src = `ikoner/${safari.ikoner}-md.png`;
       }
 
       hentdata();

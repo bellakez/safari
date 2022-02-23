@@ -50,8 +50,7 @@ function vis() {
       /*____klon er altså alt inde i template 'temp'_____*/
       const klon = temp.cloneNode(true).content;
       klon.querySelector("h2").textContent = tur.varighed;
-      klon.querySelector("h3").textContent = tur.pris + " kr.";
-      klon.querySelector(".area").textContent = tur.område;
+      klon.querySelector(".area").textContent = "Tur til " + tur.område;
       klon.querySelector("p").textContent = tur.kort;
       klon.querySelector("img").src = `billeder/${tur.billede}-md.jpg`;
       /*___kald til at åbne i ny side_____*/
@@ -63,23 +62,6 @@ function vis() {
       container.appendChild(klon);
     }
   });
-}
-
-// BURGER MENU
-
-document.querySelector("#open").addEventListener("click", openMenu);
-document.querySelector("#close").addEventListener("click", closeMenu);
-
-function openMenu() {
-  document.querySelector(".menu").style.transform = "translateY(0)";
-  document.querySelector("#open").classList.add("hide");
-  document.querySelector("#close").classList.remove("hide");
-}
-
-function closeMenu() {
-  document.querySelector(".menu").style.transform = "translateY(-100%)";
-  document.querySelector("#open").classList.remove("hide");
-  document.querySelector("#close").classList.add("hide");
 }
 
 // BACK TO TOP
@@ -123,3 +105,12 @@ function skift() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(skift, 4000); //Tid på billederne//
 }
+
+//Pop up/Modal//
+const modal = document.querySelector("#modal");
+document.querySelector(".logo2").addEventListener("click", visDetaljer);
+
+function visDetaljer() {
+  modal.style.display = "flex";
+}
+modal.addEventListener("click", () => (modal.style.display = "none"));
