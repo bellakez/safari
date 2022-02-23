@@ -93,16 +93,6 @@ p {
   }
 }
 
-.billederamme {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 25px;
-  height: 250px;
-  border: 0.6px solid #092626;
-  grid-area: 1/1;
-  padding: 1rem;
-}
-
 /*Styling af knapper på billeder OG billeder*/
 .box {
   display: grid;
@@ -133,6 +123,17 @@ p {
   border: 0.6px solid #092626;
   grid-area: 1/1;
   margin-bottom: 1rem;
+}
+
+/*Styling af ramme om teksten*/
+.tekstramme {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
+  height: 250px;
+  border: 0.6px solid #092626;
+  grid-area: 1/1;
+  padding: 1rem;
 }
 
 /*Styling af splash*/
@@ -238,21 +239,6 @@ p {
   display: none;
 }
 
-.knap:hover {
-  background-color: black;
-  color: white;
-  border-color: white;
-}
-
-.knap {
-  background-color: white;
-  padding: 1rem 2rem;
-  border: dotted black 1px;
-  box-shadow: gray 0.5rem 0.5rem;
-  text-decoration: none;
-  color: black;
-}
-
 .boxed {
   text-align: center;
 }
@@ -281,21 +267,6 @@ p {
   font-weight: bold;
 }
 
-.knap:hover {
-  background-color: black;
-  color: white;
-  border-color: white;
-}
-
-.knap {
-  background-color: white;
-  padding: 1rem 2rem;
-  border: dotted black 1px;
-  box-shadow: gray 0.5rem 0.5rem;
-  text-decoration: none;
-  color: black;
-}
-
 .boxed {
   text-align: center;
 }
@@ -321,15 +292,16 @@ p {
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #93552a; /* Set a background color */
+  opacity: 80%;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 25px; /* Some padding */
   border-radius: 70px; /* Rounded corners */
   font-size: 15px; /* Increase font size */
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #dfc9b9; /* Add a dark-grey background on hover */
 }
 
 /*.topnav {
@@ -360,13 +332,4 @@ p {
   font-family: "Source Serif Pro";
   cursor: pointer;
   border: none;
-}
-
-.billederamme {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 25px;
-  height: 250px;
-  border: 2px solid #082525;
-  grid-area: 1/1;
 }
