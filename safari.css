@@ -196,7 +196,7 @@ p {
   background-size: 100%;
   background-repeat: no-repeat;
   top: 2%;
-  left: 88%;
+  left: 2%;
   width: 10%;
   cursor: pointer;
 }
@@ -251,7 +251,8 @@ p {
 }
 
 #banner button {
-  margin: 2em 0 0 1.2em;
+  margin: 15px;
+  padding: 2px;
   text-transform: capitalize;
   color: white;
   background-color: #343f32;
@@ -301,7 +302,8 @@ p {
 
 #modal article {
   max-width: 700px;
-  margin: 2em, auto;
+  margin: 15px;
+  padding: 2px;
   background-color: white;
 }
 
@@ -319,4 +321,17 @@ p {
 }
 #modal button:hover {
   background-color: #dfc9b9;
+}
+
+img.styletile {
+  max-width: 100%;
+  border-radius: 25px;
+}
+#modal h2{
+  margin: 15px;
+  padding: 2px;
+}
+#modal p{
+  margin: 15px;
+  padding: 2px;
 }
