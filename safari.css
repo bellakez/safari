@@ -29,6 +29,26 @@ article:hover {
   -webkit-box-shadow: 1px 1px 31px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 31px -9px rgba(0, 0, 0, 0.75);
 }
+/*Styling af knap i article*/
+.forsidebutton {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+article button {
+  display: inline-block;
+  background-color: #93552a;
+  border: none;
+  margin: 15px;
+  padding: 2px;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 2rem;
+  width: 190px;
+  height: 40px;
+  font-family: "Source Serif Pro";
+  cursor: pointer;
+}
 
 /*Styling af fonte*/
 /*Mobil versiom*/
@@ -119,24 +139,12 @@ p {
   }
 }
 
-/*Styling af knapper på billeder OG billeder*/
+/*Styling af billeder*/
 .box {
   display: grid;
   margin: 0.2rem;
 }
-.box button {
-  place-self: center center;
-  background-color: #93552a;
-  border: none;
-  grid-area: 1/1;
-  margin: 2em 0 0 1.2em;
-  text-transform: capitalize;
-  color: white;
-  border-radius: 2rem;
-  width: 190px;
-  height: 40px;
-  font-family: "Source Serif Pro";
-}
+
 /*Styling af billeder til artikel*/
 .box img {
   /*Billede størrelse*/
