@@ -19,8 +19,15 @@ article {
   border: 0.6px solid #092626;
   border-radius: 25px;
   display: inline-block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin: 1rem;
+  cursor: pointer;
+}
+
+article:hover {
+  box-shadow: 1px 1px 31px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 31px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 31px -9px rgba(0, 0, 0, 0.75);
 }
 
 /*Styling af fonte*/
@@ -120,7 +127,6 @@ p {
 .box button {
   place-self: center center;
   background-color: #93552a;
-  cursor: pointer;
   border: none;
   grid-area: 1/1;
   margin: 2em 0 0 1.2em;
