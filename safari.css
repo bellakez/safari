@@ -344,12 +344,15 @@ footer {
 }
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 5px;
 }
 .navne {
   display: inline-block;
 }
 footer h2 {
+  font-size: 0.9rem;
+}
+footer p {
   font-size: 0.8rem;
-  text-align: center;
 }
