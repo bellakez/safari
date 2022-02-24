@@ -265,6 +265,7 @@ p {
   border: none;
 }
 
+/*Denne knap er taget udefra, og er derfor en allerede eksisterende kode, som vi har brugt*/
 /*Styling af tilbage til toppen knap*/
 #myBtn {
   display: none; /* Hidden by default */
