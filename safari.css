@@ -335,3 +335,20 @@ img.styletile {
   margin: 15px;
   padding: 2px;
 }
+
+/*___FOOTER____*/
+
+footer {
+  background-color: #dfc9b9;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navne {
+  display: inline-block;
+}
+footer h2 {
+  font-size: 0.8rem;
+  text-align: center;
+}
