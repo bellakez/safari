@@ -148,7 +148,7 @@ p {
 /*Styling af billeder til artikel*/
 .box img {
   /*Billede størrelse*/
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   object-fit: cover;
   width: 100%;
   border-radius: 25px;
@@ -237,7 +237,7 @@ p {
   grid-column: 1;
   color: white;
   font-size: 3rem;
-  min-width: 600;
+  /*min-width: 600;*/
   text-align: center;
 }
 
